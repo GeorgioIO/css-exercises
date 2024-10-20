@@ -1,0 +1,23 @@
+.class-one
+{
+    background-color: hsl(9, 43%, 55%);
+    font-family: Verdana,'DejaVu Sans',sans-serif;
+}
+
+.class-two
+{
+    font-size: 24px;
+}
+
+#id-one
+{
+    color: #0000FF;
+    font-size: 36px;
+}
+
+#id-two
+{
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #009900;
+}
