@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   height: 100vh;
+  max-width: 100%;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 img {
@@ -23,4 +34,68 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+
+/* -- HEADER AND COMBINATION WITH FOOTER -- */
+.header,
+.footer
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.header ul.left-links,
+.header ul.right-links,
+.footer ul.left-links,
+.footer ul.right-links
+{
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+}
+
+ul.left-links a,
+ul.right-links a
+{
+  text-decoration: none;
+  color: rgb(172, 168, 168);
+}
+
+ul.left-links a:hover,
+ul.right-links a:hover 
+{
+  color: rgb(66, 64, 64);
+}
+
+/* -- CONTENT -- */
+.content
+{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+ 
+.buttons
+{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.buttons button
+{
+  padding: 10px;
+}
+
+/* -- FOOTER -- */
+
+.footer
+{
+  background-color: #eeeeee;
 }
